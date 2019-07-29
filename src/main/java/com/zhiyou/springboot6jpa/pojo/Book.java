@@ -59,4 +59,14 @@ public class Book {
     public void setIntroduction(String introduction) {
         this.introduction = introduction;
     }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", writer='" + writer + '\'' +
+                ", introduction='" + introduction + '\'' +
+                '}';
+    }
 }
