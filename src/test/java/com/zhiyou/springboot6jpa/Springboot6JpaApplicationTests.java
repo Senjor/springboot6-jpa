@@ -73,4 +73,15 @@ public class Springboot6JpaApplicationTests {
     }
 
 
+    //测试按name查询
+    @Test
+    public void testFindByName(){
+
+        Book book = bookRepository.findByName("java");
+        if (book != null) {
+            System.out.println("name = " + book.getName());
+            System.out.println("account = " + book.getWriter());
+        }
+    }
+
 }
